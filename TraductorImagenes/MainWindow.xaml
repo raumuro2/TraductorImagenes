@@ -6,5 +6,5 @@
         Topmost="True" 
         MouseDoubleClick="Window_MouseDoubleClick">
     
-    <Border BorderBrush="#f20089" Background="#8900f2" BorderThickness="4" Opacity="0.1"/>
+    <Border BorderBrush="#f20089" Background="#8900f2" BorderThickness="4" Opacity="0.3"/>
 </Window>

@@ -6,12 +6,52 @@
         xmlns:local="clr-namespace:TraductorImagenes"
         mc:Ignorable="d"
         WindowStyle="None"
-        Title="TraduccionWindow" Height="Auto" Width="Auto" Background="#5a189a">
-    <Grid>
+        ResizeMode="CanResizeWithGrip"
+        Title="TraduccionWindow" 
+        Foreground="#240046" 
+        Background="#5a189a"
+        SizeToContent="WidthAndHeight"
+        MinWidth="300"
+        MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+
+    <Grid Margin="10" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="40" />
         </Grid.RowDefinitions>
-        <TextBlock x:Name="txt_Response" Text="Response" FontSize="16" Margin="20"  TextWrapping="Wrap"  MaxWidth="200"/>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="txt_Response" 
+                   Text="Response" 
+                   FontSize="16" 
+                   Margin="20"
+                   TextWrapping="Wrap"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"
+                   Width="260"/>
+        <!-- Width establecido a 260 para dejar margen -->
+
+        <Button x:Name="btn_atras" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Content="ATRAS" 
+                Style="{StaticResource BtnStyle}" 
+                Height="30" 
+                Width="60"
+                Click="btn_atras_Click"
+                Margin="5"/>
+
+        <Button x:Name="btn_cerrar" 
+                Grid.Row="1" 
+                Grid.Column="1"
+                Content="CERRAR" 
+                Style="{StaticResource BtnStyle}" 
+                Height="30" 
+                Width="60"
+                Click="btn_cerrar_Click"
+                Margin="5"/>
     </Grid>
 </Window>
