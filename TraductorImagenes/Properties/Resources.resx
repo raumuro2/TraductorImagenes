@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="REGION" xml:space="preserve">
-    <value>westeurope</value>
-  </data>
-  <data name="SPEECH_KEY" xml:space="preserve">
-    <value>d0bf330a4be44d80b6c7daf5e981ee95</value>
-  </data>
-  <data name="VISION_ENDPOINT" xml:space="preserve">
-    <value>https://cvraulmuro.cognitiveservices.azure.com/</value>
-  </data>
-  <data name="VISION_KEY" xml:space="preserve">
-    <value>d099ae50021a442ea3a3f7963d5cfd6e</value>
-  </data>
 </root>

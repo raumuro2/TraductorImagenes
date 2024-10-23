@@ -59,41 +59,5 @@ namespace TraductorImagenes.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a westeurope.
-        /// </summary>
-        internal static string REGION {
-            get {
-                return ResourceManager.GetString("REGION", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a d0bf330a4be44d80b6c7daf5e981ee95.
-        /// </summary>
-        internal static string SPEECH_KEY {
-            get {
-                return ResourceManager.GetString("SPEECH_KEY", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a https://cvraulmuro.cognitiveservices.azure.com/.
-        /// </summary>
-        internal static string VISION_ENDPOINT {
-            get {
-                return ResourceManager.GetString("VISION_ENDPOINT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a d099ae50021a442ea3a3f7963d5cfd6e.
-        /// </summary>
-        internal static string VISION_KEY {
-            get {
-                return ResourceManager.GetString("VISION_KEY", resourceCulture);
-            }
-        }
     }
 }
