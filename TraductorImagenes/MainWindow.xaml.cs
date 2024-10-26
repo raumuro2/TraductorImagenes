@@ -288,13 +288,6 @@ namespace TraductorImagenes
                         g.CopyFromScreen(rect.Left, rect.Top, 0, 0, new System.Drawing.Size(width, height), CopyPixelOperation.SourceCopy);
                     }
 
-                    // Guardar una copia en el escritorio para verificación
-                    string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                    string fileName = $"captura_{DateTime.Now:yyyyMMdd_HHmmss}.png";
-                    string fullPath = System.IO.Path.Combine(desktopPath, fileName);
-                    capturedImage.Save(fullPath, ImageFormat.Png);
-                    Debug.WriteLine($"Captura guardada en: {fullPath}");
-
                     return new Bitmap(capturedImage);
                 }
             }
